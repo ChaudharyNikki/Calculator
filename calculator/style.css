@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family: cursive;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(35deg, #0C2D48 ,#65737e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    height: 30em;
+    width: 25%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid;
+    border-radius:10px;
+}
+
+input{
+    height: 3em;
+    width: 96%;
+    margin: 0px 3px 8px 3px;
+    border: 3px solid;
+    border-radius: 26px ;
+    box-shadow: inset 2px 3px 4px 3px rgb(110, 149, 189);
+    text-align: right;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+input::placeholder{
+    letter-spacing: 12px;
+}
+
+button{
+    height: 3em;
+    width: 24%;
+    font-size: 22px;
+    text-align: center;
+    margin: 7px 0px 7px 0px;
+    border: 3px solid ;
+    box-shadow: inset 2px 3px 4px 3px rgb(110, 149, 189);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:active{
+    transform: scale(0.7)
+}
+
+#equal{
+    width: 185px;
+    border-radius: 30px;
+}
+
+.operator{
+    background-color: rgb(178, 184, 233);
+}
+
+/* for small screen */
+
+@media (min-width: 300px) and (max-width: 1329px)
+{
+
+    .calculator{
+        width: max-content;
+        padding: 9px;    
+    }
+
+    input{
+        width: 10.5em;
+    }
+    
+    button{
+        width: 3em; 
+    }
+
+    #equal{
+        width: 6.1em;
+    }
+
+}
